@@ -3,3 +3,4 @@
 * [Getting Started with GreatFET](getting-started)
 * [General-Purpose Input/Output (GPIIO)](gpio)
 * [Serial Peripheral Interface (SPI)](spi)
+* [Logic Analysis](logic-analysis)
