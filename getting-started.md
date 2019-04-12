@@ -108,14 +108,14 @@ with the GreatFET One.
 
 Try turning on LED4 from the shell:
 
-```
+```python
 led = gf.leds[4]
 led.toggle()
 ```
 
 now try blinking LED3 a few times:
 
-```
+```python
 import time
 for i in range(10):
 	gf.leds[3].toggle()
@@ -127,14 +127,14 @@ anything from Python!  To get started exploring the Python capabilities of
 GreatFET, you can try using the tab key to complete commands or try the
 built-in help:
 
-```
+```python
 help(gf.leds[3])
 ```
 
 For bonus points, see if you can turn off the heartbeat and control LED1.
 Here's a help command to get you started:
 
-```
+```python
 help(gf.apis.heartbeat)
 ```
 
