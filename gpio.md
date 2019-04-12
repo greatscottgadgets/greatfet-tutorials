@@ -1,0 +1,94 @@
+## General-Purpose Input/Output (GPIO)
+
+In the Getting Started with GreatFET tutorial, we blinked one of the built-in
+LEDs.  Now let's learn how to manipulate General-Purpose Input/Output (GPIO)
+pins so that we can interface with external LEDs or other devices!
+
+You'll need a few thing to follow this tutorial:
+
+* GreatFET One (also known as Azalea)
+* Solderless Breadboard Neighbor for GreatFET (also known as Daffodil) or any breadboard
+* a through-hole LED
+* a current-limiting resistor (any value from 200 ohms to 2000 ohms should be fine)
+* two male-to-male jumper wires
+
+
+### Controlling an external LED
+
+Connect the LED
+
+Plug the LED into the breadboard so that the shorter lead is in the same row as
+a wire connecting to one of the GND pins on GreatFET One.  Push the LED's
+longer lead into a row with a wire connecting to pin 4 on header J1.
+
+FIXME photo
+
+Open an interactive Python shell:
+
+gf shell FIXME what happens if you don't have IPython installed?
+
+Select a pin by number:
+
+```python
+pin = gf.gpio.get_pin('J1_P4')
+```
+
+Configure the pin as an output:
+
+```python
+pin.set_direction(gf.gpio.DIRECTION_OUT)
+```
+
+Turn on the LED:
+
+```python
+pin.write(1)
+```
+
+Turn off the LED:
+
+```python
+pin.write(0)
+```
+
+Blink the LED:
+
+```python
+import time
+for i in range(10):
+	pin.write(1)
+	time.sleep(0.2)
+	pin.write(0)
+	time.sleep(0.2)
+```
+
+FIXME is there a toggle method?
+
+
+### GPIO input
+
+Configure the pin as an input:
+
+```python
+pin.set_direction(gf.gpio.DIRECTION_OUT)
+```
+
+Disconnect the LED and use a jumper wire to connect pin 4 to pin 1 on header
+J1.  This connects the input to GND (0 V).
+
+```python
+pin.read()
+```
+
+The read() method should return 0, indicating that a low voltage is connected
+to the input.
+
+Now disconnect the jumper wire from pin 1 and connect it to VCC (3.3 V) on pin
+2.  It should now connect pin 2 to pin 4 on header J1.
+
+```python
+pin.read()
+```
+
+The read() method should return 1, indicating that a high voltage is connected
+to the input.
