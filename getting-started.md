@@ -1,26 +1,19 @@
 ## Getting Started with GreatFET
 
-### Install Software
+### Install or Update Software
 
 ```
-git clone https://github.com/greatscottgadgets/greatfet.git
-cd greatfet/libgreat/host
-python setup.py build && sudo python setup.py install
-cd ../../host
-python setup.py build && sudo python setup.py install
+sudo pip3 install --upgrade greatfet
 ```
 
 
 ### Install udev Rules
 
 ```
-FIXME cd
-sudo cp host/misc/54-greatfet.rules /etc/udev/rules.d
+git clone https://github.com/greatscottgadgets/greatfet.git
+sudo cp greatfet/host/misc/54-greatfet.rules /etc/udev/rules.d
 sudo udevadm control --reload-rules
 ```
-
-
-FIXME flash stub installation
 
 
 ### Connect your GreatFET One
@@ -59,7 +52,7 @@ important to update the firmware on your GreatFET One to match.  This can be
 done with a single command:
 
 ```
-FIXME gf fw --auto
+gf fw --auto
 ```
 
 
@@ -99,7 +92,7 @@ interface.  Let's try blinking an LED from Python.
 First start up an interactive Python shell:
 
 ```
-gf shell FIXME what happens if you don't have IPython installed?
+gf shell
 ```
 
 The "gf shell" command starts an IPython shell, connects to the first GreatFET
