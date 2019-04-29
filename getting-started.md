@@ -1,5 +1,8 @@
 ## Getting Started with GreatFET
 
+Follow these instructions to get started with GreatFET on Linux.
+
+
 ### Install or Update Software
 
 ```
@@ -8,6 +11,12 @@ sudo pip3 install --upgrade greatfet
 
 
 ### Install udev Rules
+
+This is an optional step that we recommend so that you will be able to use your
+GreatFET as a non-root user.  The example udev rules file that we provide
+assumes that your user is a member of the plugdev group.  If that is not the
+case, you can either add your user to the plugdev group or modify the file to
+give permission to the group of your choice instead of plugdev.
 
 ```
 git clone https://github.com/greatscottgadgets/greatfet.git
