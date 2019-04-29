@@ -113,4 +113,4 @@ help(gf.apis.heartbeat)
 ```
 
 When you're ready to try something new, type "exit" to close the Python shell
-and check out one of the other tutorials!
+and check out one of the [other tutorials](README.md)!
