@@ -59,35 +59,8 @@ gf fw --auto
 ### Blinking an LED
 
 There are four fabulous LEDs on GreatFET One.  LED1 normally indicates a
-heartbeat, but you can do whatever you like with LED2, LED3, and LED4.  Try
-turning on LED2 using the command-line:
-
-FIXME led subcommand not installed?
-```
-gf led --on 2
-```
-
-Now turn it off:
-
-```
-gf led --off 2
-```
-
-You can also toggle its state (on or off) with the toggle option:
-
-```
-gf led -t 2
-```
-
-For more information about the "gf led" command, take a peek at its help:
-
-```
-gf led -h
-```
-
-While several useful GreatFET features are available from the command-line, an
-even more powerful array of options is available to you from the Python
-interface.  Let's try blinking an LED from Python.
+heartbeat, but you can do whatever you like with LED2, LED3, and LED4.  Let's
+try blinking an LED from Python.
 
 First start up an interactive Python shell:
 
