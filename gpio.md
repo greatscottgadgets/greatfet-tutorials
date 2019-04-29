@@ -10,16 +10,15 @@ You'll need a few thing to follow this tutorial:
 * Solderless Breadboard Neighbor for GreatFET (also known as Daffodil) or any breadboard
 * a through-hole LED
 * a current-limiting resistor (any value from 200 ohms to 2000 ohms should be fine)
-* two male-to-male jumper wires
 
 
 ### Controlling an external LED
 
 Connect the LED
 
-Plug the LED into the breadboard so that the shorter lead is in the same row as
-a wire connecting to one of the GND pins on GreatFET One.  Push the LED's
-longer lead into a row with a wire connecting to pin 4 on header J1.
+Plug the shorter lead of the LED into pin 1 on header J1 and the longer lead of
+the LED into a breadboard.  Plug one lead of the resistor into the same row of
+the breadboard, and plug its other lead int pin 4 on header J1.
 
 FIXME photo
 
@@ -73,8 +72,8 @@ Configure the pin as an input:
 pin.set_direction(gf.gpio.DIRECTION_OUT)
 ```
 
-Disconnect the LED and use a jumper wire to connect pin 4 to pin 1 on header
-J1.  This connects the input to GND (0 V).
+Disconnect the LED and use the resistor to connect pin 4 to pin 1 on header J1.
+This connects the input to GND (0 V).
 
 ```python
 pin.read()
@@ -83,7 +82,7 @@ pin.read()
 The read() method should return 0, indicating that a low voltage is connected
 to the input.
 
-Now disconnect the jumper wire from pin 1 and connect it to VCC (3.3 V) on pin
+Now disconnect the resistor from pin 1 and connect it to VCC (3.3 V) on pin
 2.  It should now connect pin 2 to pin 4 on header J1.
 
 ```python
