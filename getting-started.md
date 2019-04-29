@@ -88,8 +88,7 @@ for i in range(10):
 	time.sleep(0.2)
 ```
 
-That's it!  Now that you have controlled an LED from Python, you can control
-anything from Python!  To get started exploring the Python capabilities of
+That's it!  To get started exploring the Python capabilities of
 GreatFET, you can try using the tab key to complete commands or try the
 built-in help:
 
