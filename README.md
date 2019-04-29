@@ -1,7 +1,7 @@
 ## Welcome to the GreatFET Tutorials
 
-* [Getting Started with GreatFET](getting-started)
-* [General-Purpose Input/Output (GPIO)](gpio)
-* [Serial Peripheral Interface (SPI)](spi)
-* [Logic Analysis](logic-analysis)
-* [Writing a Python Program for GreatFET](python)
+* [Getting Started with GreatFET](getting-started.md)
+* [General-Purpose Input/Output (GPIO)](gpio.md)
+* [Serial Peripheral Interface (SPI)](spi.md)
+* [Logic Analysis](logic-analysis.md)
+* [Writing a Python Program for GreatFET](python.md)
