@@ -81,10 +81,10 @@ The "gf shell" command starts an IPython shell, connects to the first GreatFET
 One it finds, and sets up an object called "gf" that you can use to interact
 with the GreatFET One.
 
-Try turning on LED4 from the shell:
+Try turning on LED2 from the shell:
 
 ```python
-led = gf.leds[4]
+led = gf.leds[2]
 led.toggle()
 ```
 
