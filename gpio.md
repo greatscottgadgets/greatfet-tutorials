@@ -4,7 +4,7 @@ In the Getting Started with GreatFET tutorial, we blinked one of the built-in
 LEDs.  Now let's learn how to manipulate General-Purpose Input/Output (GPIO)
 pins so that we can interface with external LEDs or other devices!
 
-You'll need a few thing to follow this tutorial:
+You'll need a few things to follow this tutorial:
 
 * GreatFET One (also known as Azalea)
 * Solderless Breadboard Neighbor for GreatFET (also known as Daffodil) or any breadboard
