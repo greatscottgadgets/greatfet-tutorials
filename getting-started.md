@@ -31,6 +31,9 @@ Find the USB0 port on your GreatFET One.  This is the port on the left (convex)
 side of the board, the side with LEDs and buttons.  Use a USB cable to connect
 this port to your host computer.
 
+### Install Windows Drivers
+
+We rely on one of the generic USB drivers for Windows; which often needs a little help to wind up installed and bound to the relevant device. For now, the easiest way to do that is to use the Zadig utility to bind the "libusb-win32" driver to the GreatFET device. There's a generic tutorial here: https://github.com/pbatard/libwdi/wiki/Zadig; you'll need to select the GreatFET device and select "libusb-win32" as the driver to bind to.
 
 ### Check your GreatFET One
 
