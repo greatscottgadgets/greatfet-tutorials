@@ -69,7 +69,7 @@ FIXME is there a toggle method?
 Configure the pin as an input:
 
 ```python
-pin.set_direction(gf.gpio.DIRECTION_OUT)
+pin.set_direction(gf.gpio.DIRECTION_IN)
 ```
 
 Disconnect the LED and use the resistor to connect pin 4 to pin 1 on header J1.
