@@ -55,13 +55,9 @@ Blink the LED:
 ```python
 import time
 for i in range(10):
-	pin.write(True)
-	time.sleep(0.2)
-	pin.write(False)
+	pin.write(not pin.read())
 	time.sleep(0.2)
 ```
-
-FIXME is there a toggle method?
 
 
 ### GPIO input
