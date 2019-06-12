@@ -41,13 +41,13 @@ pin.set_direction(gf.gpio.DIRECTION_OUT)
 Turn on the LED:
 
 ```python
-pin.write(1)
+pin.write(True)
 ```
 
 Turn off the LED:
 
 ```python
-pin.write(0)
+pin.write(False)
 ```
 
 Blink the LED:
@@ -55,9 +55,9 @@ Blink the LED:
 ```python
 import time
 for i in range(10):
-	pin.write(1)
+	pin.write(True)
 	time.sleep(0.2)
-	pin.write(0)
+	pin.write(False)
 	time.sleep(0.2)
 ```
 
@@ -79,8 +79,8 @@ This connects the input to GND (0 V).
 pin.read()
 ```
 
-The read() method should return 0, indicating that a low voltage is connected
-to the input.
+The read() method should return False, indicating that a low voltage is
+connected to the input.
 
 Now disconnect the resistor from pin 1 and connect it to VCC (3.3 V) on pin
 2.  It should now connect pin 2 to pin 4 on header J1.
@@ -89,5 +89,5 @@ Now disconnect the resistor from pin 1 and connect it to VCC (3.3 V) on pin
 pin.read()
 ```
 
-The read() method should return 1, indicating that a high voltage is connected
-to the input.
+The read() method should return True, indicating that a high voltage is
+connected to the input.
