@@ -80,8 +80,7 @@ pin.read()
 The read() method should return False, indicating that a low voltage is
 connected to the input.
 
-Now disconnect the resistor from pin 1 and connect it to VCC (3.3 V) on pin
-2.  It should now connect pin 2 to pin 4 on header J1.
+Now disconnect the resistor from pin 1 and connect it to VCC (3.3 V) on pin 2.  It should now connect pin 2 to pin 4 on header J1.
 
 ```python
 pin.read()
