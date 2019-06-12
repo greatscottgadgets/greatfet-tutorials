@@ -24,7 +24,9 @@ FIXME photo
 
 Open an interactive Python shell:
 
-gf shell FIXME what happens if you don't have IPython installed?
+```
+gf shell
+```
 
 Select a pin by number:
 
