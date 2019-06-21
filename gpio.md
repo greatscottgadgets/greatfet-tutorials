@@ -18,7 +18,7 @@ Connect the LED
 
 Plug the shorter lead of the LED into pin 1 on header J1 and the longer lead of
 the LED into a breadboard.  Plug one lead of the resistor into the same row of
-the breadboard, and plug its other lead int pin 4 on header J1.
+the breadboard, and plug its other lead into pin 4 on header J1.
 
 FIXME photo
 

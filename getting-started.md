@@ -31,6 +31,11 @@ Find the USB0 port on your GreatFET One.  This is the port on the left (convex)
 side of the board, the side with LEDs and buttons.  Use a USB cable to connect
 this port to your host computer.
 
+If you chose to install the udev rules and your GreatFET One was already 
+connected to your computer prior to this step, take this opportunity to 
+disconnect your GreatFET one from your computer and connect it again. This will 
+ensure that the udev rules take effect. 
+
 
 ### Check your GreatFET One
 
