@@ -1,6 +1,7 @@
 ## Welcome to the GreatFET Tutorials
 
 * [Getting Started with GreatFET](getting-started.md)
+* [Windows setup guide](windows.md)
 * [General-Purpose Input/Output (GPIO)](gpio.md)
 * [Serial Peripheral Interface (SPI)](spi.md)
 
