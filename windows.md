@@ -3,10 +3,10 @@ Using GreatFET on windows
 ### Python
 * Download the latest version of python3 [here](https://www.python.org/downloads/windows/)
 * Be sure to check the `Add Python x.x to PATH` box in the bottom left corner
-![python_installer](https://github.com/GravesJake/greatfet-tutorials/blob/master/images/python_install_box.png)
+![python_installer](images/python_install_box.png)
 * Open a command prompt window and type `python -V` to verify that the version of python you downloaded has been installed correctly
 
-![python_version](https://github.com/GravesJake/greatfet-tutorials/blob/master/images/python_version.png)
+![python_version](images/python_version.png)
 
 ### Git
 * Download the latest version of git for Windows [here](https://git-scm.com/downloads)
@@ -15,7 +15,7 @@ Using GreatFET on windows
 * Download the latest version of Zadig [here](https://zadig.akeo.ie/)
 * We rely on one of the generic USB drivers for Windows; which often needs a little help to wind up installed and bound to the relevant device. For now, the easiest way to do that is to use the Zadig utility to bind the "libusb-win32" driver to the GreatFET device. There's a generic tutorial [here](https://github.com/pbatard/libwdi/wiki/Zadig); you'll need to select the GreatFET device and select "libusb-win32" as the driver to bind to.
 
-![zadig_window](https://github.com/GravesJake/greatfet-tutorials/blob/master/images/zadig_install_config.png)
+![zadig_window](images/zadig_install_config.png)
 
 ### GreatFET
 * Open a new command prompt (close any existing one if you have one open) and enter ```pip install greatfet```
