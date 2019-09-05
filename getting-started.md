@@ -6,8 +6,11 @@ Follow these instructions to get started with GreatFET on Linux.
 ### Install or Update Software
 
 ```
-sudo pip3 install --upgrade greatfet
+pip3 install --upgrade --user greatfet
 ```
+
+Pay attention to the output of pip3 because it may tell you that you need to
+add something to your PATH.
 
 
 ### Install udev Rules
