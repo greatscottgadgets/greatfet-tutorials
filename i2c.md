@@ -2,7 +2,7 @@
 
 I2C is a multi-master, multi-slave, half-duplex serial communication protocol that is commonly used for
 inter-chip communication; for example between a microcontroller and a sensor. In this tutorial we will use GreatFET One to interface with a
-an I2C temperature and humidity sensor, the Si7021 from Silicon Labs.
+an I2C temperature and humidity sensor, the SI7021 from Silicon Labs.
 
 Many types sensors are available on breakout boards from Adafruit and other websites, the specific part I'm using is the Adafruit Si7021 Temperature & Humidity Sensor Breakout Board
 (Product ID: 3251) Depending on the sensor you are using, the commands you will need to send may differ from the example below but the principple and method will remain the same. 
@@ -34,6 +34,7 @@ This returns a list of working I2C addresses and a table repersenting the addres
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 ```
+The 7-bit base slave address of the SI7021 is 0x40, and is read write
 
 Open an interactive Python shell:
 
