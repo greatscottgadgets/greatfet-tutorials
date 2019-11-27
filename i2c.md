@@ -1,7 +1,7 @@
 ## Inter-Integrated Circuit (I2C)
 
 I2C is a multi-master, multi-slave, half-duplex serial communication protocol that is commonly used for
-inter-chip communication; for example between a microcontroller and a sensor. In this tutorial we will use GreatFET One to interface with a
+inter-chip communication; for example, between a microcontroller and a sensor. In this tutorial we will use GreatFET One to interface with a
 an I2C temperature and humidity sensor, the SI7021 from Silicon Labs.
 
 Many types sensors are available on breakout boards from Adafruit and other websites, the specific part I'm using is the Adafruit Si7021 Temperature & Humidity Sensor Breakout Board
@@ -14,7 +14,7 @@ You can use jumper wires to connect a breakout board to the following pins on Gr
 * VCC (5.0 V): J2 pin 2
 * GND (ground): J2 pin 1
 
-Before we dive in to writing some Python we can use the i2c scan utility to figure out the I2C address  of the sensor:
+Before we dive in to writing some Python we can use the i2c scan utility to figure out the I2C address of the sensor:
 
 ```terminal
 gf i2c --scan
@@ -51,7 +51,7 @@ Now we can send the measure temperature command 0xf3
 ```python
 gf.i2c.write(0x40, [0xf3])
 ```
-And read the the two byte temperature code
+And read the two byte temperature code
 
 ```python
 gf.i2c.read(0x40, 2)
