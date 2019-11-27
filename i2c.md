@@ -59,7 +59,7 @@ gf.i2c.read(0x40, 2)
 
 from these bytes the temperature can be calculated according to the equation in the SI7021 datasheet.
 
-![temperature_equation](images/i2c_tutorial_equatio.jpg)
+![temperature_equation](images/i2c_tutorial_equation.jpg)
 
 The short program below can be used to measure the temperature and print the results to the terminal!
 
