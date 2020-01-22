@@ -10,7 +10,7 @@ pip3 install --upgrade --user greatfet
 ```
 
 Pay attention to the output of pip3 because it may tell you that you need to
-add something to your PATH.
+[add something to your PATH](https://www.google.com/search?q=how+to+add+a+directory+to+path).
 
 
 ### Install udev Rules
