@@ -1,6 +1,6 @@
 ## Inter-Integrated Circuit (I2C)
 
-I2C is a multi-master, multi-slave, half-duplex serial communication protocol that is commonly used for
+I2C is a multi-controller, multi-peripheral, half-duplex serial communication protocol that is commonly used for
 inter-chip communication; for example, between a microcontroller and a sensor. In this tutorial we will use GreatFET One to interface with a
 an I2C temperature and humidity sensor, the SI7021 from Silicon Labs.
 

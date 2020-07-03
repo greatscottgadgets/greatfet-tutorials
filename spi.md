@@ -10,7 +10,7 @@ LEDs that use the SPI communication protocol.  You can use jumper wires to
 connect a strip to the following pins on GreatFET One:
 
 * clock: J1 pin 38 (SCK)
-* data: J1 pin 39 (MOSI)
+* data: J1 pin 39 (COPI)
 * VCC (3.3 V supply): J1 pin 2
 * GND (ground): J1 pin 1
 
@@ -33,15 +33,15 @@ gf.spi.transmit([0x00, 0x00, 0x00, 0x00, 0xff, 0x00, 0x00, 0x00])
 ```
 
 The spi.transmit() method executes a bi-directional data transfer.  The
-GreatFET One acts as SPI master, pulling down SSEL (slave select) to activate
-the slave and then driving SCK (SPI clock) and MOSI (master out, slave in).  We
-haven't wired up SSEL because the APA102 LEDs do not require it.
+GreatFET One acts as SPI controller, pulling down CS (chip select) to activate
+the peripheral and then driving SCK (SPI clock) and COPI (controller out, peripheral in).  We
+haven't wired up CS because the APA102 LEDs do not require it.
 
-As it clocks data out on MOSI, it also clocks in the same amount of data from
-the slave on MISO (master in, slave out).  The argument passed to
+As it clocks data out on COPI, it also clocks in the same amount of data from
+the peripheral on CIPO (controller in, peripheral out).  The argument passed to
 spi.transmit() is an array of bytes to transmit.  The method returns the
 received data as an array of bytes.  The APA102 does not implement
-bi-directional communication, so we haven't connected anything to MISO.  That
+bi-directional communication, so we haven't connected anything to CIPO.  That
 means that spi.transmit() always returns an array of bytes with all bits set
 (0xff) every time we call it, but we can ignore that.
 
@@ -78,3 +78,12 @@ def chase():
 
 chase()
 ```
+
+### SPI Pin Naming
+
+Older GreatFET hardware and documentation used pin names MOSI, MISO, and SSEL
+which have been deprecated in favor of COPI, CIPO, and CS.  Related
+documentation such as the LPC4330 user manual may continue to use the
+deprecated names.  See OSHWA's [Resolution to Redefine SPI Signal
+Names](https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names) for
+more information.
