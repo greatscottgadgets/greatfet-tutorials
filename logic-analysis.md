@@ -10,10 +10,10 @@ is to use one of the GreatFET's other peripherals such as SPI.
 
 Use jumper wires to make the following connections:
 
-* Connect J1 pin 4 (SGPIO0) to J1 pin 37 (SSEL)
+* Connect J1 pin 4 (SGPIO0) to J1 pin 37 (CS)
 * Connect J1 pin 6 (SGPIO1) to J1 pin 38 (SCK)
-* Connect J1 pin 28 (SGPIO2) to J1 pin 39 (MOSI)
-* Connect J1 pin 30 (SGPIO3) to J1 pin 40 (MISO)
+* Connect J1 pin 28 (SGPIO2) to J1 pin 39 (COPI)
+* Connect J1 pin 30 (SGPIO3) to J1 pin 40 (CIPO)
 
 Open an interactive Python shell in your first terminal window:
 
