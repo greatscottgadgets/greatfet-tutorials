@@ -22,7 +22,7 @@ case, you can either add your user to the plugdev group or modify the file to
 give permission to the group of your choice instead of plugdev.
 
 ```
-sudo wget https://raw.githubusercontent.com/greatscottgadgets/greatfet/master/host/misc/54-greatfet.rules -O /etc/udev/rules.d/54-greatfet.rules
+sudo wget https://raw.githubusercontent.com/greatscottgadgets/greatfet/master/host/util/54-greatfet.rules -O /etc/udev/rules.d/54-greatfet.rules
 sudo udevadm control --reload-rules
 ```
 
