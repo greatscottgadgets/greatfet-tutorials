@@ -21,6 +21,8 @@ assumes that your user is a member of the plugdev group.  If that is not the
 case, you can either add your user to the plugdev group or modify the file to
 give permission to the group of your choice instead of plugdev.
 
+This is not necessary on MacOS-based systems.
+
 ```
 sudo wget https://raw.githubusercontent.com/greatscottgadgets/greatfet/master/host/util/54-greatfet.rules -O /etc/udev/rules.d/54-greatfet.rules
 sudo udevadm control --reload-rules
