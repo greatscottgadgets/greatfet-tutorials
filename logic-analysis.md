@@ -35,7 +35,7 @@ FIXME file extension?
 In the Python shell, type:
 
 ```
-gf.spi.transmit("GreatFET")
+gf.spi.transmit(b"GreatFET")
 ```
 
 
