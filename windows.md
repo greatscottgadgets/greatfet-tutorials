@@ -17,6 +17,8 @@ Using GreatFET on windows
 
 ![zadig_window](images/zadig_install_config.png)
 
+* If there is more than one instance of GreatFET in Zadig (e.g., one for Interface 0 and one for Interface 1), the driver needs to be set at the "composite" level.  By default, Zadig hides the composite devices (as Windows will automatically assign it the usbccgp.sys driver).  First select Options and then enable List All Devices.  Select Options again and then disable Ignore Hubs or Composite Parents.  Then find the GreatFET composite entry and assign the relevant USB driver to the composite device (additional note, "libusbk" has been reported as working better than "libusb-win32" by some).
+
 ### GreatFET
 * Open a new command prompt (close any existing one if you have one open) and enter ```pip install greatfet```
 
